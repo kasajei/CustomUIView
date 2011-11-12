@@ -47,7 +47,7 @@
     CustomView *customView2 = [[CustomView alloc] init];
     customView2.view.frame = CGRectMake(0, winSize.height/2,winSize.width,100);
     [self.view addSubview:customView2.view];
-    [customView1 release];
+    [customView2 release];
     
 }
 
