@@ -23,13 +23,18 @@
     if (self) {
         // Initialization code
         [self awakeFromNib];
+
+        self.clipsToBounds = YES;
+        if (CGRectIsEmpty(frame)) {
+            self.frame = CGRectMake(frame.origin.x, frame.origin.y, self.view.frame.size.width, self.view.frame.size.height);
+        }
     }
     return self;
 }
 
 - (void)dealloc{
-    [super dealloc];
     [view release];
+    [super dealloc];
 }
 
 /*
