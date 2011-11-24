@@ -23,7 +23,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    CustomUIView *customUIView1 = [[CustomUIView alloc] init];
+    CustomUIView *customUIView1 = [[[CustomUIView alloc] init] autorelease];
     [self.view addSubview:customUIView1];
 }
 

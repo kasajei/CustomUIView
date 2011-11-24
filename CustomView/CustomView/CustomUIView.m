@@ -33,8 +33,8 @@
 }
 
 - (void)dealloc{
-    [super dealloc];
     [view release];
+    [super dealloc];
 }
 
 /*
